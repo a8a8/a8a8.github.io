@@ -16,28 +16,28 @@
 
 <body>
     <div class="container">
-        <h1 class="display-1">Guess the Number!</h1>
-        <p class="lead">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or
-            fewer. We'll tell you if your guess was too high or too low.</p>
+        <h1 class="display-1">數字猜</h1>
+        <p class="lead"><span>壹至佰間有一數，</span> <span>請君猜後並輸入。</span> </p>
+        <p class="lead"><span>是高是低立提醒，</span><span>十回之內定勝負。</span></p>
+        <p class="lead"></p>
+        <div>
+            <p class="font-weight-bold">已猜：<span id="guessed"></span></p>
+        </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon3">Enter a guess: </span>
+                <span class="input-group-text" id="basic-addon3">請君輸入: </span>
             </div>
             <input type="text" class="form-control" id="userInput" aria-describedby="basic-addon3">
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="guessBtn">Guess!</button>
+                <button class="btn btn-primary" type="button" id="guessBtn">猜！</button>
             </div>
         </div>
         <div>
-            <p>Previous guesses: <span id="guessed">123123123123</span></p>
+            <p id="result" class="font-weight-bold">結果：</p>
         </div>
         <div>
-            <p id="result">Result</p>
+            <button type="button" class="btn btn-warning" id="startNewBtn">再來一局！</button>
         </div>
-        <div>
-            <button type="button" class="btn btn-warning" id="startNewBtn">Start a New Game!</button>
-        </div>
-
     </div>
 
     <!-- Optional JavaScript -->
