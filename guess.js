@@ -69,7 +69,6 @@ createTargetNum();
 console.log("out func targetNum: "+targetNum);
 guessBtn.addEventListener('click', guess);
 window.addEventListener("keydown", function (e) {
-        e.preventDefault();
         if (e.keyCode === 13) {
           guessBtn.click();
         }
