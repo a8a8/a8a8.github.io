@@ -16,11 +16,11 @@ function getInput(){
 
 function fits(x) {
     if (!!(Number.isInteger(x))) {
-        alert('Not an integer, input again!');
+        alert('君輸入者非整數，請重試');
         return
     }
     if (x < 1 || x > 100) {
-        alert('Not between 1~100, input again!');
+        alert('君輸入者非壹至佰內數字，請重試');
         return
     }
 }
@@ -31,17 +31,17 @@ function changeResult(x) {
 
 function judgeInput(x, y) {
     if (x > y) {
-        changeResult("Too High!");
+        changeResult("猜高了");
     } else if (x < y) {
-        changeResult("Too Low!");
+        changeResult("猜低了");
     } else {
-        changeResult("You Are Right!");
+        changeResult("君贏也！");
     }
 }
 
 function guess(){
     userNum = document.getElementById('userInput').value
-    
+
     fits(userNum);
     judgeInput(userNum, targetNum);
     tried++ ;
@@ -74,4 +74,3 @@ guessBtn.addEventListener('keyup', function(event){
     }
 });
 startNewBtn.addEventListener('click', startNew);
-
