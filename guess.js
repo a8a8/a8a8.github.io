@@ -20,7 +20,7 @@ function fits(x) {
         return
     }
     if (x < 1 || x > 100) {
-        alert('君輸入者非壹至佰內數字，請重試');
+        alert('君輸入者非壹至佰內之數，請重試');
         return
     }
 }
